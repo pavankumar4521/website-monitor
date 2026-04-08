@@ -1,0 +1,33 @@
+
+============================================================
+Check at: 2026-04-08 06:31:55 | Interval: 5 | Timeout: 3
+============================================================
+✅ [OK] | 2026-04-08 06:31:55 | https://jsonplaceholder.typicode.com/posts/1 | 200 | 0.21s
+✅ [OK] | 2026-04-08 06:31:55 | https://jsonplaceholder.typicode.com/posts/2 | 200 | 0.16s
+🚨 [DOWN] | 2026-04-08 06:31:55 | https://jsonplaceholder.typicode.com/invalid | 404 | 0.18s
+⚙️ Attempting recovery for: https://jsonplaceholder.typicode.com/invalid
+❌ No recovery defined for: https://jsonplaceholder.typicode.com/invalid
+🚨 [UNREACHABLE] | 2026-04-08 06:31:55 | https://invalidurl
+⚙️ Attempting recovery for: https://invalidurl
+❌ No recovery defined for: https://invalidurl
+🚨 [UNREACHABLE] | 2026-04-08 06:31:58 | http://localhost:5000
+⚙️ Attempting recovery for: http://localhost:5000
+🔁 Recovery executed: docker start mywebsite
+
+============================================================
+Check at: 2026-04-08 06:32:07 | Interval: 5 | Timeout: 3
+============================================================
+✅ [OK] | 2026-04-08 06:32:07 | https://jsonplaceholder.typicode.com/posts/1 | 200 | 0.17s
+✅ [OK] | 2026-04-08 06:32:07 | https://jsonplaceholder.typicode.com/posts/2 | 200 | 0.14s
+🚨 [DOWN] | 2026-04-08 06:32:07 | https://jsonplaceholder.typicode.com/invalid | 404 | 0.14s
+🚨 [UNREACHABLE] | 2026-04-08 06:32:08 | https://invalidurl
+✅ [OK] | 2026-04-08 06:32:10 | http://localhost:5000 | 200 | 0.02s
+
+============================================================
+Check at: 2026-04-08 06:32:15 | Interval: 5 | Timeout: 3
+============================================================
+✅ [OK] | 2026-04-08 06:32:15 | https://jsonplaceholder.typicode.com/posts/1 | 200 | 0.16s
+✅ [OK] | 2026-04-08 06:32:15 | https://jsonplaceholder.typicode.com/posts/2 | 200 | 0.15s
+🚨 [DOWN] | 2026-04-08 06:32:16 | https://jsonplaceholder.typicode.com/invalid | 404 | 0.17s
+🚨 [UNREACHABLE] | 2026-04-08 06:32:16 | https://invalidurl
+✅ [OK] | 2026-04-08 06:32:18 | http://localhost:5000 | 200 | 0.02s
